@@ -1,0 +1,9 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.home .recharts {
+  display: flex;
+  justify-content: flex-start;
+}
