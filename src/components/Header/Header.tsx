@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <h1 className="header-title">Wallet App</h1>
+          <h1 className="header-title">WALLET</h1>
           <div className="balance-section">
             <span className="balance-text">Balance:</span>
             <span className="balance-amount">${balance}</span>

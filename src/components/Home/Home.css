@@ -3,7 +3,18 @@
   flex-direction: column;
   gap: 60px;
 }
-.home .recharts {
+.recharts {
   display: flex;
-  justify-content: flex-start;
+}
+.dropDownBtns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 930px;
+  position: fixed;
+  margin-top: 250px;
+}
+.table {
+  position: relative;
+  margin-top: 200px;
 }

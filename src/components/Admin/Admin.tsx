@@ -21,7 +21,6 @@ const Admin: React.FC = () => {
       data: new Date().toTimeString(),
     };
     dispatch(addProduct(newProduct));
-    // Очищаем поля формы после добавления продукта
     setType("");
     setAmount(0);
     setCategory("");
@@ -33,12 +32,11 @@ const Admin: React.FC = () => {
       <div className="container">
         <div className="admin">
           <div className="int">
-            <input
-              onChange={(e) => setType(e.target.value)}
-              type="text"
-              value={type}
-              placeholder="type"
-            />
+            <select value={type} onChange={(e) => setType(e.target.value)}>
+             <option>Change</option>
+              <option>Cash in</option>
+              <option>Cash out</option>
+            </select>
             <input
               onChange={(e) => setAmount(parseFloat(e.target.value))}
               type="number"
